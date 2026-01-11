@@ -17,21 +17,21 @@
 		rgba(var(--gray), 33%);
 }
 @font-face {
-	font-family: "Atkinson";
-	src: url("/fonts/atkinson-regular.woff") format("woff");
+	font-family: "Source Code Pro";
+	src: url("/fonts/SourceCodePro.ttf") format("truetype");
 	font-weight: 400;
 	font-style: normal;
 	font-display: swap;
 }
 @font-face {
-	font-family: "Atkinson";
-	src: url("/fonts/atkinson-bold.woff") format("woff");
+	font-family: "Source Code Pro";
+	src: url("/fonts/SourceCodePro-Medium.ttf") format("truetype");
 	font-weight: 700;
 	font-style: normal;
 	font-display: swap;
 }
 body {
-	font-family: "Atkinson", sans-serif;
+	font-family: "Source Code Pro", sans-serif;
 	margin: 0;
 	padding: 0;
 	text-align: left;
@@ -48,6 +48,7 @@ main {
 	max-width: calc(100% - 2em);
 	margin: auto;
 	padding: 3em 1em;
+	;
 }
 h1,
 h2,
