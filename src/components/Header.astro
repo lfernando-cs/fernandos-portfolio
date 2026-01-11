@@ -5,11 +5,15 @@ import HeaderLink from "./HeaderLink.astro";
 
 <header>
   <nav>
-    <h2><a href="/">{SITE_TITLE}</a></h2>
+    <h2>
+      <a href="/">
+        <img src="/public/LF.png" alt="logo logo" width="40" height="40" />
+      </a>
+    </h2>
     <div class="internal-links">
       <HeaderLink href="/">Home</HeaderLink>
       <HeaderLink href="/about">About</HeaderLink>
-      <HeaderLink href="/blog">Blog</HeaderLink>
+      <HeaderLink href="/experience">Experience</HeaderLink>
     </div>
     <div class="social-links">
       <a href="https://github.com/withastro/astro" target="_blank">
