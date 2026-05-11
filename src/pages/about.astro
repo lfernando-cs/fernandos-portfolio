@@ -1,63 +1,240 @@
 ---
-import AboutHeroImage from '../assets/blog-placeholder-about.jpg';
-import Layout from '../layouts/BlogPost.astro';
+import BaseHead from "../components/BaseHead.astro";
+import Footer from "../components/Footer.astro";
+import Header from "../components/Header.astro";
 ---
 
-<Layout
-	title="About Me"
-	description="Lorem ipsum dolor sit amet"
-	pubDate={new Date('August 08 2021')}
-	heroImage={AboutHeroImage}
->
-	<p>
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-		labore et dolore magna aliqua. Vitae ultricies leo integer malesuada nunc vel risus commodo
-		viverra. Adipiscing enim eu turpis egestas pretium. Euismod elementum nisi quis eleifend quam
-		adipiscing. In hac habitasse platea dictumst vestibulum. Sagittis purus sit amet volutpat. Netus
-		et malesuada fames ac turpis egestas. Eget magna fermentum iaculis eu non diam phasellus
-		vestibulum lorem. Varius sit amet mattis vulputate enim. Habitasse platea dictumst quisque
-		sagittis. Integer quis auctor elit sed vulputate mi. Dictumst quisque sagittis purus sit amet.
-	</p>
+<!doctype html>
+<html lang="es">
+  <head>
+    <BaseHead
+      title="Sobre mí"
+      description="Quien es Luis Fernando Callisaya Surco"
+    />
+  </head>
+  <body class="bg-zinc-100 text-zinc-900 min-h-screen flex flex-col bg-black">
+    <Header />
 
-	<p>
-		Morbi tristique senectus et netus. Id semper risus in hendrerit gravida rutrum quisque non
-		tellus. Habitasse platea dictumst quisque sagittis purus sit amet. Tellus molestie nunc non
-		blandit massa. Cursus vitae congue mauris rhoncus. Accumsan tortor posuere ac ut. Fringilla urna
-		porttitor rhoncus dolor. Elit ullamcorper dignissim cras tincidunt lobortis. In cursus turpis
-		massa tincidunt dui ut ornare lectus. Integer feugiat scelerisque varius morbi enim nunc.
-		Bibendum neque egestas congue quisque egestas diam. Cras ornare arcu dui vivamus arcu felis
-		bibendum. Dignissim suspendisse in est ante in nibh mauris. Sed tempus urna et pharetra pharetra
-		massa massa ultricies mi.
-	</p>
+    <main class="flex-grow flex items-center">
+      <div class="max-w-6xl mx-auto px-6 py-16 w-full">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+          <!-- Lado izquierdo: cluster de fotos -->
+          <div class="relative h-[520px]">
+            <!-- Flechas curvas decorativas -->
+            <svg
+              class="absolute inset-0 w-full h-full pointer-events-none"
+              viewBox="0 0 460 520"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <defs>
+                <marker
+                  id="arr1"
+                  markerWidth="8"
+                  markerHeight="6"
+                  refX="7"
+                  refY="3"
+                  orient="auto"
+                >
+                  <polygon points="0 0, 8 3, 0 6" fill="#f97316"></polygon>
+                </marker>
+                <marker
+                  id="arr2"
+                  markerWidth="8"
+                  markerHeight="6"
+                  refX="7"
+                  refY="3"
+                  orient="auto"
+                >
+                  <polygon points="0 0, 8 3, 0 6" fill="#f97316"></polygon>
+                </marker>
+                <marker
+                  id="arr3"
+                  markerWidth="8"
+                  markerHeight="6"
+                  refX="7"
+                  refY="3"
+                  orient="auto"
+                >
+                  <polygon points="0 0, 8 3, 0 6" fill="#f97316"></polygon>
+                </marker>
+              </defs>
+              <!-- Cycling → Presentation -->
+              <path
+                d="M 130 260 C 145 190, 200 155, 245 150"
+                stroke="#f97316"
+                stroke-width="1.5"
+                fill="none"
+                marker-end="url(#arr1)"></path>
+              <!-- Presentation → Profile -->
+              <path
+                d="M 320 320 C 310 380, 280 410, 255 415"
+                stroke="#f97316"
+                stroke-width="1.5"
+                fill="none"
+                marker-end="url(#arr2)"></path>
+              <!-- Profile → Cycling -->
+              <path
+                d="M 190 430 C 155 420, 115 370, 110 300"
+                stroke="#f97316"
+                stroke-width="1.5"
+                fill="none"
+                marker-end="url(#arr3)"></path>
+            </svg>
 
-	<p>
-		Mollis nunc sed id semper risus in. Convallis a cras semper auctor neque. Diam sit amet nisl
-		suscipit. Lacus viverra vitae congue eu consequat ac felis donec. Egestas integer eget aliquet
-		nibh praesent tristique magna sit amet. Eget magna fermentum iaculis eu non diam. In vitae
-		turpis massa sed elementum. Tristique et egestas quis ipsum suspendisse ultrices. Eget lorem
-		dolor sed viverra ipsum. Vel turpis nunc eget lorem dolor sed viverra. Posuere ac ut consequat
-		semper viverra nam. Laoreet suspendisse interdum consectetur libero id faucibus. Diam phasellus
-		vestibulum lorem sed risus ultricies tristique. Rhoncus dolor purus non enim praesent elementum
-		facilisis. Ultrices tincidunt arcu non sodales neque. Tempus egestas sed sed risus pretium quam
-		vulputate. Viverra suspendisse potenti nullam ac tortor vitae purus faucibus ornare. Fringilla
-		urna porttitor rhoncus dolor purus non. Amet dictum sit amet justo donec enim.
-	</p>
+            <!-- Destellos morados -->
+            <span
+              class="absolute text-purple-400 text-lg font-bold select-none"
+              style="top: 52px; left: 148px;">✦</span
+            >
+            <span
+              class="absolute text-purple-400 text-base font-bold select-none"
+              style="bottom: 70px; right: 30px;">✦</span
+            >
 
-	<p>
-		Mattis ullamcorper velit sed ullamcorper morbi tincidunt. Tortor posuere ac ut consequat semper
-		viverra. Tellus mauris a diam maecenas sed enim ut sem viverra. Venenatis urna cursus eget nunc
-		scelerisque viverra mauris in. Arcu ac tortor dignissim convallis aenean et tortor at. Curabitur
-		gravida arcu ac tortor dignissim convallis aenean et tortor. Egestas tellus rutrum tellus
-		pellentesque eu. Fusce ut placerat orci nulla pellentesque dignissim enim sit amet. Ut enim
-		blandit volutpat maecenas volutpat blandit aliquam etiam. Id donec ultrices tincidunt arcu. Id
-		cursus metus aliquam eleifend mi.
-	</p>
+            <!-- Puntos naranjas (círculos) -->
+            <span
+              class="absolute w-3 h-3 rounded-full border-2 border-orange-500"
+              style="top: 76px; right: 20px;"></span>
+            <span
+              class="absolute w-3 h-3 rounded-full border-2 border-orange-500"
+              style="top: 200px; left: 94px;"></span>
 
-	<p>
-		Tempus quam pellentesque nec nam aliquam sem. Risus at ultrices mi tempus imperdiet. Id porta
-		nibh venenatis cras sed felis eget velit. Ipsum a arcu cursus vitae. Facilisis magna etiam
-		tempor orci eu lobortis elementum. Tincidunt dui ut ornare lectus sit. Quisque non tellus orci
-		ac. Blandit libero volutpat sed cras. Nec tincidunt praesent semper feugiat nibh sed pulvinar
-		proin gravida. Egestas integer eget aliquet nibh praesent tristique magna.
-	</p>
-</Layout>
+            <!-- Foto grande: presentación (top center-right) -->
+            <div
+              class="absolute overflow-hidden shadow-md"
+              style="top: 60px; left: 160px; width: 280px; height: 260px; border-radius: 1rem 3rem 1rem 1rem;"
+            >
+              <!-- TODO: Reemplaza con tu foto de presentación -->
+              <div
+                class="w-full h-full bg-emerald-700 flex items-center justify-center text-white text-sm text-center p-4"
+              >
+                <img
+                  src="/images/profile.jpeg"
+                  alt="Presentation"
+                  class="w-full h-full object-cover object-top"
+                />
+              </div>
+            </div>
+
+            <!-- Foto pequeña: ciclismo (left middle) -->
+            <div
+              class="absolute overflow-hidden shadow-md rounded-2xl"
+              style="top: 270px; left: 70px; width: 110px; height: 135px;"
+            >
+              <!-- TODO: Reemplaza con tu foto de ciclismo -->
+              <div
+                class="w-full h-full bg-amber-200 flex items-center justify-center text-zinc-700 text-xs text-center p-2"
+              >
+                <img
+                  src="/images/profile.jpeg"
+                  alt="Hobby"
+                  class="w-full h-full object-cover object-top"
+                />
+              </div>
+            </div>
+
+            <!-- Foto perfil: formal (bottom center) -->
+            <div
+              class="absolute overflow-hidden shadow-md rounded-2xl"
+              style="bottom: 0px; left: 175px; width: 200px; height: 240px;"
+            >
+              <img
+                src="/images/profile.jpeg"
+                alt="Luis Fernando Callisaya"
+                class="w-full h-full object-cover object-top"
+              />
+            </div>
+          </div>
+
+          <!-- Lado derecho: bio y badges -->
+          <div class="flex flex-col gap-8">
+            <!-- Texto bio con borde izquierdo -->
+            <div class="border-l-4 border-zinc-400 pl-6">
+              <p class="text-zinc-700 leading-relaxed text-base">
+                Soy Luis Fernando Callisaya, un desarrollador Fullstack y
+                Community Builder con experiencia en el desarrollo de
+                aplicaciones web y móviles. He liderado equipos y proyectos en
+                LATAM con un fuerte enfoque en el impacto social y la innovación
+                tecnológica. Mi camino incluye haber participado en
+                aceleradoras, construido startups y servido como embajador de
+                comunidades tecnológicas. Construyamos algo grande juntos.
+              </p>
+            </div>
+
+            <!-- Badges de afiliaciones -->
+            <div class="flex flex-wrap gap-3">
+              <!-- Notion -->
+              <div
+                class="flex items-center gap-2 px-4 py-2.5 border border-zinc-200 rounded-xl bg-white shadow-sm"
+              >
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect width="24" height="24" rx="4" fill="white"></rect>
+                  <path
+                    d="M5 4.5C5 3.67 5.67 3 6.5 3H17C18.1 3 19 3.9 19 5v14c0 1.1-.9 2-2 2H7c-1.1 0-2-.9-2-2V4.5z"
+                    fill="white"
+                    stroke="#000"
+                    stroke-width="1.5"></path>
+                  <path
+                    d="M8.5 7.5h2.2l4.3 5.8V7.5H17v9h-2.2l-4.3-5.8v5.8H8.5V7.5z"
+                    fill="black"></path>
+                </svg>
+                <div class="leading-tight">
+                  <div class="text-xs font-bold text-zinc-900">Notion</div>
+                  <div class="text-[10px] text-zinc-500">
+                    Official Ambassador
+                  </div>
+                </div>
+              </div>
+
+              <!-- Sigma Squared -->
+              <div
+                class="flex items-center px-4 py-2.5 border border-red-400 rounded-xl bg-white shadow-sm"
+              >
+                <span class="font-bold text-sm tracking-tight text-zinc-900"
+                  >SIGMA<span class="text-red-500">SQUARED</span></span
+                >
+              </div>
+
+              <!-- Google Developers -->
+              <div
+                class="flex items-center gap-2 px-4 py-2.5 border border-zinc-200 rounded-xl bg-white shadow-sm"
+              >
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"
+                    fill="#4285F4"></path>
+                  <path
+                    d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"
+                    fill="#34A853"></path>
+                  <path
+                    d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"
+                    fill="#FBBC05"></path>
+                  <path
+                    d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"
+                    fill="#EA4335"></path>
+                </svg>
+                <span class="text-xs font-medium text-zinc-700"
+                  >Google Developers</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <Footer />
+  </body>
+</html>

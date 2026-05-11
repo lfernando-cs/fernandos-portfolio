@@ -4,16 +4,16 @@ import HeaderLink from "./HeaderLink.astro";
 
 <header class="w-full py-6 pr-4 pl-4 transition-all duration-300">
   <div class="max-w-6xl mx-auto flex items-center justify-between">
-    <div class="flex items-center gap-12">
+    <div class="flex items-center gap-32">
       <a href="/" class="flex-shrink-0 font-bold" aria-label="Home">
-        Fernando CS</a
-      >
+        <img src="/images/logo.png" alt="Logo" class="w-12 h-12 rounded-lg" />
+      </a>
 
       <nav class="hidden md:flex gap-16">
-        <HeaderLink href="/about" class="text-sm font-medium transition-colors">
+        <HeaderLink href="/" class="text-sm font-medium transition-colors">
           Sobre mí
         </HeaderLink>
-
+        <!-- 
         <HeaderLink href="/blog" class="text-sm font-medium transition-colors">
           Blog
         </HeaderLink>
@@ -23,17 +23,17 @@ import HeaderLink from "./HeaderLink.astro";
           class="text-sm font-medium transition-colors"
         >
           Charlas
-        </HeaderLink>
+        </HeaderLink> -->
       </nav>
     </div>
 
     <!-- Botón Connect -->
-    <!-- <a
-      href="/contact"
-      class="flex items-center gap-2 px-5 py-2.5 rounded-full border border-zinc-200 dark:border-zinc-800 text-sm font-medium hover:bg-zinc-50 dark:hover:bg-zinc-900 transition-colors shadow-sm"
+    <a
+      href="/"
+      class="flex items-center gap-2 px-5 py-2.5 rounded-full border border-zinc-200 dark:border-zinc-800 text-sm font-medium hover:bg-zinc-50 dark:hover:bg-zinc-900 transition-colors shadow-sm disabled:cursor-not-allowed"
     >
-      <span class="text-base">📅</span> Conectemos
-    </a> -->
+      <span class="text-base"></span> Conectemos
+    </a>
   </div>
 
   <!-- Menú móvil -->
